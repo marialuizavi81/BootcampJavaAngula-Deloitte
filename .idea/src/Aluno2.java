@@ -3,7 +3,7 @@ public class Aluno2 extends Pessoa2 {
     private String curso;
 
     public Aluno2(String matricula, String curso, String nome, int idade, String sexo, String cpf) {
-        super(nome, idade, sexo, cpf);
+        super (nome, idade, sexo, cpf);
         this.matricula = matricula;
         this.curso = curso;
     }

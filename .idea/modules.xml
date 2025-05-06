@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/BootcampJavaAngula-Deloitte.iml" filepath="$PROJECT_DIR$/.idea/BootcampJavaAngula-Deloitte.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/Semana1/Semana1.iml" filepath="$PROJECT_DIR$/src/Semana1/Semana1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/src/Semana1/Semana1.iml" filepath="$PROJECT_DIR$/.idea/src/Semana1/Semana1.iml" />
     </modules>
   </component>
 </project>
