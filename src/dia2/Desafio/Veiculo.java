@@ -1,4 +1,4 @@
-package dia2;
+package dia2.Desafio;
 
 public class Veiculo {
     protected String marca;  // Alterado de private para protected

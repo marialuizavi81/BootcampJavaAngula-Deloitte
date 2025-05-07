@@ -1,14 +1,16 @@
+package dia1;
+
 import java.util.Scanner;
 
-public class exercicio4 {
+public class Tabuada {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite um numero: ");
-        int num = sc.nextInt();
+        int numero1 = sc.nextInt();
 
         for(int i = 1; i <= 10; i++) {
-            int tabuada = num * i;
-            System.out.println(" a tabuada do numero " + num +" = " + tabuada);
+            int tabuada = numero1 * i;
+            System.out.println(  numero1 +" X " + i +" = " +tabuada);
 
         }
     }

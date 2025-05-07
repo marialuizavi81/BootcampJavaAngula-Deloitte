@@ -1,10 +1,10 @@
-package dia2;
+package dia2.exercicio1;
 
-public class Professor2 extends Pessoa2 {
+public class Professores extends Pessoas {
     private String Matriculaprofessor;
     private String diciplina;
 
-    public Professor2(String nome, int idade, String sexo, String cpf, String diciplina, String matriculaprofessor) {
+    public Professores(String nome, int idade, String sexo, String cpf, String diciplina, String matriculaprofessor) {
         super (nome, idade, sexo,cpf);
         this.diciplina = diciplina;
         this.Matriculaprofessor = matriculaprofessor;

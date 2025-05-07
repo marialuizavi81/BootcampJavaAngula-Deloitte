@@ -1,10 +1,10 @@
-package dia2;
+package dia2.exercicio1;
 
-public class Aluno2 extends Pessoa2 {
+public class Alunos extends Pessoas {
     private String matricula;
     private String curso;
 
-    public Aluno2(String matricula, String curso, String nome, int idade, String sexo, String cpf) {
+    public Alunos(String matricula, String curso, String nome, int idade, String sexo, String cpf) {
         super (nome, idade, sexo, cpf);
         this.matricula = matricula;
         this.curso = curso;
@@ -18,8 +18,16 @@ public class Aluno2 extends Pessoa2 {
         return curso;
     }
 
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
     public String getmatricula() {
         return matricula;
+    }
+
+    public String setmatricula(String matricula){
+        return this.matricula;
     }
 
 

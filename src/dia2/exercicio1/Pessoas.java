@@ -1,20 +1,20 @@
-package dia2;
+package dia2.exercicio1;
 
-public class Pessoa2 {
+public class Pessoas {
     private String nome;
     private int idade;
     private String sexo;
     private String cpf;
 
 
-    public Pessoa2(String nome, int idade, String sexo, String cpf) {
+    public Pessoas(String nome, int idade, String sexo, String cpf) {
         this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
         this.cpf = cpf;
     }
 
-    public String comparar(Pessoa2 outraPessoa){
+    public String comparar(Pessoas outraPessoa){
         if(this.idade > outraPessoa.idade){
             return this.nome + " é mais velho ";
         } else if (this.idade < outraPessoa.idade) {
@@ -40,6 +40,15 @@ public class Pessoa2 {
     public String getNome() {
         return nome;
     }
+    public int getIdade() {
+        return idade;
+    }
+    public String getSexo() {
+        return sexo;
+    }
+    public String getCpf() {
+        return cpf;
+    }
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -57,14 +66,4 @@ public class Pessoa2 {
         this.cpf = cpf;
     }
 
-    public int getIdade() {
-        return idade;
-    }
-
-    public String getSexo() {
-        return sexo;
-    }
-    public String getCpf() {
-        return cpf;
-    }
 }

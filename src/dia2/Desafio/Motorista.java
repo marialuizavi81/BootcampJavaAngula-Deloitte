@@ -1,12 +1,12 @@
-package dia2;
+package dia2.Desafio;
 
 public class Motorista extends Veiculo {
     private String nome;
     private String cnh;
     private String veiculo_atual;
 
-    public Motorista(String nome, String cnh, String veiculo_atual) {
-        super();
+    public Motorista(String marca, String modelo, int ano,String nome, String cnh, String veiculo_atual) {
+        super(marca,modelo,ano);
         this.nome = nome;
         this.cnh = cnh;
         this.veiculo_atual = veiculo_atual;
@@ -40,10 +40,7 @@ public class Motorista extends Veiculo {
         System.out.println("Carro atual: " + this.veiculo_atual);
     }
 
-    public void RemoverCarro(){
-        System.out.println("Carro removido: " + this.veiculo_atual);
-
-    }
+    public void RemoverCarro(){ System.out.println("Carro removido: " + this.veiculo_atual); }
 
     public void dirigir(){
         System.out.println("Dirigido: " + this.veiculo_atual);

@@ -1,6 +1,8 @@
+package dia1;
+
 import java.util.Scanner;
 
-public class exercicio3 {
+public class MediaDeNota {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite a primeira nota: ");

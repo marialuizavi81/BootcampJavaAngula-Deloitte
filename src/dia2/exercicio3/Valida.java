@@ -1,4 +1,4 @@
-package dia2;
+package dia2.exercicio3;
 
 public class Valida {
     private String cpf;
@@ -6,15 +6,16 @@ public class Valida {
     public Valida(String cpf) {
         this.cpf = cpf;
     }
+
     public String getCpf() {
-        return cpf;
-    }
-    public void validacpfManual() {
-        if(cpf.length() != 11) {
+        if (cpf.length() != 11) {
             System.out.println("CPF invalido");
-        }else {
+        } else {
             System.out.println("CPF valido");
+            return cpf;
         }
 
+        return "termino da sessao.";
     }
+
 }

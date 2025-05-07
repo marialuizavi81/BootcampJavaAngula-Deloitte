@@ -1,4 +1,4 @@
-package dia2;
+package dia2.Desafio;
 
 public class Frota extends Veiculo {
 
