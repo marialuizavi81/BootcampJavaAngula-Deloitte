@@ -1,3 +1,5 @@
+package dia2;
+
 public class Aluno2 extends Pessoa2 {
     private String matricula;
     private String curso;

@@ -1,3 +1,5 @@
+package dia2;
+
 public class Caminhao extends Veiculo {
     private float capacidade_carga;
 

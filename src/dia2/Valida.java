@@ -1,3 +1,5 @@
+package dia2;
+
 public class Valida {
     private String cpf;
 

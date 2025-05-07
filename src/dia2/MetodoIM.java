@@ -1,3 +1,5 @@
+package dia2;
+
 public class MetodoIM {
     private double Altura;
     private double Peso;

@@ -1,9 +1,12 @@
+package dia2;
+
 public class Motorista extends Veiculo {
     private String nome;
     private String cnh;
     private String veiculo_atual;
 
     public Motorista(String nome, String cnh, String veiculo_atual) {
+        super();
         this.nome = nome;
         this.cnh = cnh;
         this.veiculo_atual = veiculo_atual;

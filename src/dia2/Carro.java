@@ -1,3 +1,4 @@
+package dia2;
 
 public class Carro extends Veiculo{
     private int numPortas;

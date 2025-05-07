@@ -1,3 +1,5 @@
+package dia2;
+
 public class Pessoa2 {
     private String nome;
     private int idade;

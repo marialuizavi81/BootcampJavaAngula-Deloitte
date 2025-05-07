@@ -1,8 +1,10 @@
+package dia2;
+
 public class Veiculo {
-        private String marca;
-        private String modelo;
-        private int ano;
-        private float velocidade = 0;
+    protected String marca;  // Alterado de private para protected
+    protected String modelo;
+    protected int ano;
+    protected float velocidade = 0;
 
         public Veiculo(String marca, String modelo, int ano) {
             this.marca = marca;
