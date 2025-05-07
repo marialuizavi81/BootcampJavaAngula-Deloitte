@@ -15,4 +15,9 @@ public class Carro extends Veiculo {
         this.numPortas = numPortas;
     }
 
+    @Override
+    public void Exibir_Iformacoes() {
+        super.Exibir_Iformacoes();
+    }
+
 }

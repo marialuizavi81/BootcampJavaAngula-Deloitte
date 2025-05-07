@@ -40,14 +40,14 @@ public class Produto {
             throw new IllegalArgumentException("Percentual de desconto inválido! Deve ser entre 0 e 100.");
         }
 
-        double produto = getValor(); // Valor original do produto
-        double desconto = produto * (percentualDesconto / 100); // Calcula o valor do desconto
-        double produtoComDesconto = produto - desconto; // Subtrai o desconto
+        double produto = getValor();
+        double desconto = produto * (percentualDesconto / 100);
+        double produtoComDesconto = produto - desconto;
 
         System.out.printf("Valor original: R$%.2f%n", produto);
         System.out.printf("Desconto (%d%%): R$%.2f%n", (int) percentualDesconto, desconto);
         System.out.printf("Valor com desconto: R$%.2f%n", produtoComDesconto);
 
-        return produtoComDesconto; // Retorna o valor final para uso externo
+        return produtoComDesconto;
     }
 }

@@ -46,10 +46,13 @@ public class Veiculo {
         }
 
         public void Exibir_Iformacoes(){
-            System.out.println("a velocidade esta em" + velocidade + "km/h\n seu Veiculo é da marca" + marca +"\n seu modelo é o"+ modelo +"\n e o ano do veiculo é" + ano  );
-
+            System.out.println("a velocidade esta em " + velocidade + " km/h\n seu Veiculo é da marca " + marca +"\n seu modelo é o "+ modelo +"\n e o ano do veiculo é " + ano  );
         }
 
+    @Override
+    public String toString() {
+        return this.getMarca() + " " + this.getModelo();
+    }
 }
 
 

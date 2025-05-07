@@ -1,10 +1,13 @@
 package dia2.Desafio;
 
-public class Frota extends Veiculo {
+import java.util.ArrayList;
+import java.util.List;
 
-    public Frota(String marca, String modelo, int ano) {
-        super(marca, modelo, ano);
-    }
+public class Frota {
+
+    List<Veiculo> listafrotas = new ArrayList<Veiculo>();
+
+    public Frota() {}
 
     public void adicionarVeiculo(Veiculo veiculo) {
         System.out.println("Adicionando veículo: " + veiculo);
@@ -14,7 +17,16 @@ public class Frota extends Veiculo {
         System.out.println("Adicionando motorista: " + motorista);
     }
 
-    public void listarVeiculo() {
+    public void listarfrota() {
         System.out.println("Listando veículo");
     }
+
+//
+//    public void listarMotorista(Veiculo veiculoss, Motoristas motoristass) {
+//        listafrotas.add(veiculoss,motoristass);
+//
+//        System.out.println("Adicionado a lista da frota" + veiculoss +" e quem o dirige é o "+ getNome_Motorista());
+//
+//    }
+
 }
