@@ -36,17 +36,23 @@ public class Veiculo {
             this.marca = marca;
         }
 
-        public void Acelerar() {
+        public void acelerar() {
             System.out.println("Acelerando a velocidade em mais 10 km/h");
             velocidade = velocidade + 10;
         }
-        public void Frear() {
-            System.out.println("Freando a velocidade para 0 km/h");
-            velocidade = 0;
+        public void frear() {
+            if(velocidade <0 ){
+                System.out.println("Velocidade Inválida");
+            }else {
+                System.out.println("Freando a velocidade para 0 km/h");
+                velocidade = 0;
+            }
+
         }
 
-        public void Exibir_Iformacoes(){
-            System.out.println("a velocidade esta em " + velocidade + " km/h\n seu Veiculo é da marca " + marca +"\n seu modelo é o "+ modelo +"\n e o ano do veiculo é " + ano  );
+        public void exibir_Iformacoes(){
+            //System.out.println("a velocidade esta em " + velocidade + " km/h\n seu Veiculo é da marca " + marca +"\n seu modelo é o "+ modelo +"\n e o ano do veiculo é " + ano  );
+            System.out.println("Marca: " + marca + "\nModelo: " + modelo +"\nAno: " + ano +"\nVelocidade atual: " + velocidade + " km/h");
         }
 
     @Override

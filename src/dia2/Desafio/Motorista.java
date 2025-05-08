@@ -14,11 +14,8 @@ public class Motorista {
         this.nomemotorista = nomemotorista;
         this.cnh = cnh;
         VeiculoAtual = null;
-
     }
-
     public String getNome() {
-
         return nomemotorista;
     }
 
@@ -37,22 +34,37 @@ public class Motorista {
 
     public void atribuirVeiculo(Veiculo veiculo){
         veiculos.add(veiculo);
+        this.VeiculoAtual = veiculo;
         System.out.println("Veiculo atual: "+veiculo.getMarca()+" registrado. adiquirido por "+ this.getNome());
-
     }
-    public void removerVeiculo(Veiculo veiculo, Motorista motorista) {
 
-        System.out.println(" fdsdxcfdfdssf"+veiculos);
+    public void removerVeiculo(Veiculo veiculo) {
+            if (this.VeiculoAtual != null) {
+                System.out.println("Veículo removido: " + this.VeiculoAtual.getMarca());
+                this.VeiculoAtual = null;
+            } else {
+                System.out.println("Nenhum veículo atribuído");
+            }
 
         if (veiculos.contains(veiculo)) {
-            System.out.println("Veiculo de " + motorista.getNome() + " removido: " + veiculos + "retirado");
+            System.out.println("Veiculo de " + getNome() + " removido: " + veiculos + "retirado");
             veiculos.remove(veiculo);
         } else {
             System.out.println(" veiculo nao encontrado. ");
         }
     }
-    public void dirigirVeiculo(Motorista motorista, Veiculo veiculos){
-        System.out.println( motorista.getNome() + " esta dirigindo o veiculo " + veiculos.getMarca() );
+    public void dirigirVeiculo( Veiculo veiculos){
+        if (VeiculoAtual != null){
+            System.out.println( getNome() + " esta dirigindo o veiculo " + veiculos.getMarca() );
+        }else{
+            System.out.println(this.getNome() + " não tem veículo atribuído");
+        }
+
+    }
+
+    public void exibirMotorista(){
+        System.out.println(" o motorista "+ getNome() + " é portador do CNH " + getCnh());
+
     }
 
 }

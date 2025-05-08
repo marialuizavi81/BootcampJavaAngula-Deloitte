@@ -1,22 +1,29 @@
 package dia2.Desafio;
 
 public class Caminhao extends Veiculo {
-    private float capacidade_carga;
+    private float capacidadeCarga;
 
 
-    public Caminhao(String marca, String modelo, int ano, float capacidade_carga) {
+    public Caminhao(String marca, String modelo, int ano, float capacidadeCarga) {
         super(marca, modelo, ano);
-        this.capacidade_carga = capacidade_carga;
+        this.capacidadeCarga = capacidadeCarga;
     }
 
-    public float getCapacidade_carga() {
-        return capacidade_carga;
+    public float getcapacidadeCarga(){
+        return capacidadeCarga;
     }
 
-    public void setCapacidade_carga(float capacidade_carga) {
-        if (capacidade_carga < 0 || capacidade_carga > 1000) {
+    public void setcapacidadeCarga(float capacidadeCarga) {
+        if (capacidadeCarga < 0 || capacidadeCarga > 1000) {
             throw new IllegalArgumentException("Capacidade invalida, deve ser maior que 0 e 1000");
         }
-        this.capacidade_carga = capacidade_carga;
+        this.capacidadeCarga = capacidadeCarga;
     }
+        @Override
+        public void exibir_Iformacoes() {
+            super.exibir_Iformacoes();
+            System.out.println("o caminhao tem capacidade de "+ getcapacidadeCarga() + " em toneladas");
+        }
+
 }
+

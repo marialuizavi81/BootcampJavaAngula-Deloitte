@@ -5,20 +5,45 @@ import java.util.List;
 
 public class Frota {
 
-    List<Veiculo> listafrotas = new ArrayList<Veiculo>();
+    private List<Veiculo> listaFrota;
+    private List<Motorista> listaMotorista;
 
-    public Frota() {}
+    public Frota() {
+        listaFrota = new ArrayList<>();
+        listaMotorista = new ArrayList<>();
+    }
 
     public void adicionarVeiculo(Veiculo veiculo) {
-        System.out.println("Adicionando veículo: " + veiculo);
+    listaFrota.add(veiculo);
+        System.out.println("Adicionando veículo: " + veiculo.marca + " "+ veiculo.modelo);
     }
 
     public void adicionarMotorista(Motorista motorista) {
-        System.out.println("Adicionando motorista: " + motorista);
+        listaMotorista.add(motorista);
+        System.out.println("Adicionando motorista: " + motorista.getNome() +" com CNH: "+ motorista.getCnh() );
     }
 
-    public void listarfrota() {
-        System.out.println("Listando veículo");
+
+    public void mostrarTodosVeiculos() {
+        if (listaFrota.isEmpty()) {
+            System.out.println("Não há veículos nem motoristas na frota.");
+            return;
+        }
+        System.out.println("=== Veículos na Frota ===");
+
+        for (Veiculo veiculo : listaFrota) {
+            veiculo.exibir_Iformacoes();
+            System.out.println("---------------------");
+        }
+
+        System.out.println("=== Motoristas na Frota ====");
+
+        for (Motorista motorista: listaMotorista){
+            motorista.exibirMotorista();
+            System.out.println("--------------------");
+        }
+        System.out.println(" FIM ");
+
     }
 
 //

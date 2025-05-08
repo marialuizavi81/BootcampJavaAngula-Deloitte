@@ -16,8 +16,9 @@ public class Carro extends Veiculo {
     }
 
     @Override
-    public void Exibir_Iformacoes() {
-        super.Exibir_Iformacoes();
+    public void exibir_Iformacoes() {
+        super.exibir_Iformacoes();
+        System.out.println(" e a quantidade de portas é " + numPortas);
     }
 
 }
